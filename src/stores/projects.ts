@@ -1,0 +1,70 @@
+import { defineStore } from "pinia";
+import { v4 as uuidV4 } from "uuid";
+
+export const useProjectsStore = defineStore({
+  id: "projects",
+  state: () => ({
+    projects: [
+      {
+        id: uuidV4(),
+        projectName: "School vue portal",
+        thumbnail: "/src/assets/portfolio/1.jpg",
+        description: "This is a school project",
+        role: "Frontend",
+        technologies: ["Styled components", "React", "Redux"],
+        onlineUrl: "www.domain.com",
+        githubUrl: "github.com",
+      },
+      {
+        id: uuidV4(),
+        projectName: "School vue portal",
+        thumbnail: "/src/assets/portfolio/2.jpg",
+        description: "This is a school project",
+        role: "Frontend",
+        technologies: ["Styled components", "React", "Redux"],
+        onlineUrl: "www.domain.com",
+        githubUrl: "github.com",
+      },
+      {
+        id: uuidV4(),
+        projectName: "School vue portal",
+        thumbnail: "/src/assets/portfolio/3.jpg",
+        description: "This is a school project",
+        role: "Frontend",
+        technologies: ["Styled components", "React", "Redux"],
+        onlineUrl: "www.domain.com",
+        githubUrl: "github.com",
+      },
+      {
+        id: uuidV4(),
+        projectName: "School vue portal",
+        thumbnail: "/src/assets/portfolio/4.jpg",
+        description: "This is a school project",
+        role: "Frontend",
+        technologies: ["Styled components", "React", "Redux"],
+        onlineUrl: "www.domain.com",
+        githubUrl: "github.com",
+      },
+      {
+        id: uuidV4(),
+        projectName: "School vue portal",
+        thumbnail: "/src/assets/portfolio/5.jpg",
+        description: "This is a school project",
+        role: "Frontend",
+        technologies: ["Styled components", "React", "Redux"],
+        onlineUrl: "www.domain.com",
+        githubUrl: "github.com",
+      },
+      {
+        id: uuidV4(),
+        projectName: "School vue portal",
+        thumbnail: "/src/assets/portfolio/6.jpg",
+        description: "This is a school project",
+        role: "Frontend",
+        technologies: ["Styled components", "React", "Redux"],
+        onlineUrl: "www.domain.com",
+        githubUrl: "github.com",
+      },
+    ],
+  }),
+});
