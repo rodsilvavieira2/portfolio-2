@@ -6,7 +6,7 @@ import { RouterLink } from "vue-router";
 <template>
   <section class="home-section align-items-center">
     <div class="container">
-      <div class="row align-items-center">
+      <div class="row align-items-center flex-wrap">
         <div class="home-text">
           <p>Olá, eu sou</p>
 
@@ -70,6 +70,7 @@ import { RouterLink } from "vue-router";
     overflow: hidden;
 
     img {
+      height: auto;
       width: 100%;
     }
   }
@@ -77,7 +78,15 @@ import { RouterLink } from "vue-router";
 
 .home-text,
 .home-img {
-  width: 50%;
+  width: 100%;
   padding: 15px;
+
+  @media (min-width: $break-p-md) {
+    width: 50%;
+  }
+}
+
+.flex-wrap {
+  flex-wrap: wrap-reverse !important;
 }
 </style>

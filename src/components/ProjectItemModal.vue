@@ -127,15 +127,15 @@ onUnmounted(() => {
   justify-content: center;
 
   min-height: 100vh;
-  padding: 40px 15px;
+  padding: 1.875rem 1.875rem;
 
   animation: fadeIn 0.5s ease-in-out;
 }
 
 .pp-content {
   background-color: $white-alpha-25-color;
-  padding: 30px;
-  border-radius: 30px;
+  padding: 1.875rem;
+  border-radius: 1.875rem;
   max-width: 900px;
   width: 100%;
   border: 1px solid $white-alpha-40-color;
@@ -150,8 +150,8 @@ onUnmounted(() => {
     align-items: center;
     justify-content: center;
 
-    height: 40px;
-    width: 40px;
+    height: 2.5rem;
+    width: 2.5rem;
     padding: 0;
 
     position: absolute;
@@ -160,18 +160,18 @@ onUnmounted(() => {
   }
 
   h3 {
-    font-size: 25px;
+    font-size: 1.5625rem;
     text-transform: capitalize;
-    margin: 20px 0 15px;
+    margin: 1.25rem 0 0.9375rem;
   }
 }
 
 .pp-thumbnail {
   position: relative;
 
-  border-radius: 10px;
+  border-radius: 0.7rem;
   overflow: hidden;
-  width: 838px;
+  width: 100%;
   height: auto;
 
   img {
@@ -184,12 +184,12 @@ onUnmounted(() => {
 
 .pp-body {
   .description {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 
   .general-info {
     li {
-      margin-bottom: 10px;
+      margin-bottom: 0.625rem;
       font-weight: 500;
       text-transform: capitalize;
 

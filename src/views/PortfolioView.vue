@@ -81,13 +81,16 @@ onMounted(() => {
 
 .portfolio-container {
   > * {
-    flex: 1 1 33%;
+    flex: 1 1 100%;
+    @media (min-width: $break-p-md) {
+      flex-basis: 33.33%;
+    }
   }
 }
 
 .scroll-top-button-wrapper {
   display: flex;
-  padding: 20px 0;
+  padding: 1.25rem 0;
   justify-content: flex-end;
 
   transform: translateY(60px);
@@ -100,10 +103,10 @@ onMounted(() => {
     align-items: center;
     justify-content: center;
 
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
 
-    border-radius: 40px;
+    border-radius: 2.5rem;
 
     padding: 0;
   }

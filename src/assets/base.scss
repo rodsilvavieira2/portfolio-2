@@ -10,6 +10,10 @@ $white-alpha-40-color: rgba(255, 255, 255, 0.4);
 $white-alpha-25-color: rgba(255, 255, 255, 0.25);
 $backdrop-filter-blur: blur(5px);
 
+$break-p-sm: 30rem;
+$break-p-md: 48rem;
+$break-p-lg: 62rem;
+$break-p-xl: 80rem;
 
 * {
   padding: 0;
@@ -37,7 +41,7 @@ body {
 #app {
   background-image: linear-gradient(to bottom right, $pink-light-color, $cyan-light-color);
   background-attachment: fixed;
-  padding: 5vh 15px;
+  padding: 5vh 0.9375rem;
   height: 100vh;
   width: 100vw;
   position: relative;
@@ -98,12 +102,12 @@ section {
   position: relative;
 
   border: 1px solid $white-alpha-40-color;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   margin: 0 auto;
 
   min-height: 90vh;
   width: 100%;
-  max-width: 80%;
+  max-width: 100%;
 
   background-color: $white-alpha-25-color;
   backdrop-filter: $backdrop-filter-blur;
@@ -111,6 +115,11 @@ section {
   animation: fadeIn 0.5s ease-in-out;
   
   z-index: 1;
+
+  @media (min-width: $break-p-sm) {
+    max-width: 90%;
+  }
+
 }
 
 h1,
@@ -146,14 +155,14 @@ a {
 }
 
 .sec-padding {
-  padding: 50px 0;
+  padding: 3.125rem 0;
 }
 
 .section-title {
-  padding: 0 15px;
+  padding: 0 0.9375rem;
   width: 100%;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 
   h2 {
     font-size: 2.5rem;
@@ -173,7 +182,7 @@ a {
 }
 
 .container {
-  padding: 0 40px;
+  padding: 0 0.625rem;
   width: 100%;
 }
 
@@ -190,13 +199,13 @@ a {
   background-color: $white-alpha-25-color;
 
   border: 1px solid $white-alpha-40-color;
-  border-radius: 30px;
+  border-radius: 1.875rem;
 
   color: $main-color;
   line-height: 1.5;
   font-weight: 500;
   text-transform: capitalize;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: inherit;
 
   cursor: pointer;
@@ -237,8 +246,8 @@ a {
   align-items: center;
   justify-content: center;
 
-  height: 40px;
-  width: 40px;
+  height: 2.5rem;
+  width: 2.5rem;
   padding: 0;
 
   position: absolute;
