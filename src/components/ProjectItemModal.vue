@@ -172,14 +172,12 @@ onUnmounted(() => {
   border-radius: 10px;
   overflow: hidden;
   width: 838px;
-  height: 471px;
+  height: auto;
 
   img {
-    position: absolute;
-    inset: 0;
     object-fit: cover;
 
-    height: 100%;
+    height: auto;
     width: 100%;
   }
 }
