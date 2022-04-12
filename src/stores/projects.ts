@@ -8,7 +8,7 @@ export const useProjectsStore = defineStore({
       {
         id: uuidV4(),
         projectName: "Youtube Clone",
-        thumbnail: "/src/assets/portfolio/youtube.png",
+        thumbnail: "/portfolio/youtube.png",
         description:
           "Um clone do Youtube feito com a tecnologia ReactJS. Totalmente responsivo, com implementação de scroll infinito e carregamento de mais itens.",
         role: "Frontend",
@@ -26,7 +26,7 @@ export const useProjectsStore = defineStore({
       {
         id: uuidV4(),
         projectName: "Whatsapp Clone",
-        thumbnail: "/src/assets/portfolio/whatsApp.png",
+        thumbnail: "/portfolio/whatsApp.png",
         description: "Um clone do WhatsApp feito com a tecnologia ReactJS",
         role: "Frontend",
         technologies: [
@@ -41,7 +41,7 @@ export const useProjectsStore = defineStore({
       {
         id: uuidV4(),
         projectName: "Instagram clone",
-        thumbnail: "/src/assets/portfolio/instagram.png",
+        thumbnail: "/portfolio/instagram.png",
         description: "Um clone do Instagram feito com a tecnologia ReactJS",
         role: "Frontend",
         technologies: [
@@ -58,7 +58,7 @@ export const useProjectsStore = defineStore({
       {
         id: uuidV4(),
         projectName: "Dashboard-chakra",
-        thumbnail: "/src/assets/portfolio/dashboard-chakra.png",
+        thumbnail: "/portfolio/dashboard-chakra.png",
         description:
           "Um dashboard feito com a tecnologia Chakra-ui e Next.js, e a utilização do react-query para gerencia o estado dos componentes.",
         role: "Frontend",
@@ -75,7 +75,7 @@ export const useProjectsStore = defineStore({
       {
         id: uuidV4(),
         projectName: "School vue portal",
-        thumbnail: "/src/assets/portfolio/dev-school.png",
+        thumbnail: "/portfolio/dev-school.png",
         description:
           "Esse é um portal feito com a tecnologia VueJS, com rotas dinâmicas atraves do vue-router. E gerenciamento de estados com vuex.",
         role: "Frontend",
@@ -86,7 +86,7 @@ export const useProjectsStore = defineStore({
       {
         id: uuidV4(),
         projectName: "Simple agenda",
-        thumbnail: "/src/assets/portfolio/agenda-app.png",
+        thumbnail: "/portfolio/agenda-app.png",
         description:
           "Um agenda simples com a tecnologia ReactJS e firebase para armazenamento de dados ,upload de arquivos, autenticação por contas google e hosting. ",
         role: "Frontend",
@@ -108,7 +108,7 @@ export const useProjectsStore = defineStore({
       {
         id: uuidV4(),
         projectName: "Upload de arquivos utilizando node streams",
-        thumbnail: "/src/assets/portfolio/node-upload.gif",
+        thumbnail: "/portfolio/node-upload.gif",
         description:
           "Uma implementação de upload de arquivos no nó usando os novos recursos do nó 16v, como a função de pipeline. A biblioteca socket.io também é usada para monitorar o progresso do upload de cada arquivo. Este projeto nem usa um framework aproveitando apenas bibliotecas e recursos nativos do node.",
         role: "FullStack",
@@ -120,7 +120,7 @@ export const useProjectsStore = defineStore({
       {
         id: uuidV4(),
         projectName: "Autenticação completa com JWT",
-        thumbnail: "/src/assets/portfolio/placeholder.png",
+        thumbnail: "/portfolio/placeholder.png",
         description:
           "Esta é uma API REST de autenticação simples, usando JWT (JSON Web Token) para controlar as sessões do usuário. E com alguns outros recursos como criação de endereço e número de telefone para um usuário cadastrado, redefinição de senha e verificação de e-mail com AWS-SES para envio de e-mails. Este projeto foi criado usando os princípios SOLID e a Metodologia TDD",
         role: "Backend",
