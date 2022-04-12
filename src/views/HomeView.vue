@@ -22,7 +22,7 @@ import { RouterLink } from "vue-router";
 
         <div class="home-img">
           <div class="img-box">
-            <img src="@/assets/profile-img.png" alt="Rodrigo Silva" />
+            <img src="/man.png" alt="Rodrigo Silva" />
           </div>
         </div>
       </div>
