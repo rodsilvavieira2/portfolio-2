@@ -9,6 +9,7 @@ $white-color: #ffff;
 $white-alpha-40-color: rgba(255, 255, 255, 0.4);
 $white-alpha-25-color: rgba(255, 255, 255, 0.25);
 $backdrop-filter-blur: blur(5px);
+$fallback-color: #311711;
 
 $break-p-sm: 30rem;
 $break-p-md: 48rem;
@@ -98,6 +99,18 @@ button {
   }
 }
 
+@keyframes skeletonLoading {
+  0% {
+    border-color: rgb(237, 242, 247);
+    background: rgb(237, 242, 247);
+  }
+
+  100% {
+    border-color: rgb(160, 174, 192);
+    background: rgb(160, 174, 192);
+  }
+}
+
 section {
   position: relative;
 
@@ -113,7 +126,7 @@ section {
   backdrop-filter: $backdrop-filter-blur;
 
   animation: fadeIn 0.5s ease-in-out;
-  
+
   z-index: 1;
 
   @media (min-width: $break-p-sm) {

@@ -26,7 +26,6 @@ onMounted(() => {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        console.log("visible");
         toTopButtonWrapperRef.value?.classList.add("show");
       } else {
         toTopButtonWrapperRef.value?.classList.remove("show");

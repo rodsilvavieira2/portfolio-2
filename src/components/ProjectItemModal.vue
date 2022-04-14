@@ -4,6 +4,8 @@ import { useProjectsStore } from "@/stores/projects";
 
 import { computed } from "@vue/reactivity";
 import { onMounted, onUnmounted, ref } from "vue";
+import ImageVue from "./Image.vue";
+import Image from "./Image.vue";
 
 const { projects } = useProjectsStore();
 const { $patch, projectItemId } = useProjectItemModal();
@@ -59,7 +61,7 @@ onUnmounted(() => {
           </button>
 
           <div class="pp-thumbnail">
-            <img :src="data?.thumbnail" alt="pp-thumbnail" />
+            <Image :src="data?.thumbnail" :alt="data?.projectName" />
           </div>
 
           <h3 id="modalTitle">{{ data?.projectName }}</h3>
@@ -84,21 +86,11 @@ onUnmounted(() => {
               </li>
 
               <li>
-                Veja Online -
-                <span>
-                  <a :href="data?.onlineUrl" target="_blank">{{
-                    data?.onlineUrl
-                  }}</a>
-                </span>
+                <a :href="data?.onlineUrl" target="_blank"> Veja Online </a>
               </li>
 
               <li>
-                Github repository -
-                <span>
-                  <a :href="data?.githubUrl" target="_blank">{{
-                    data?.githubUrl
-                  }}</a>
-                </span>
+                <a :href="data?.githubUrl" target="_blank">Github repository</a>
               </li>
             </ul>
           </div>
@@ -127,7 +119,7 @@ onUnmounted(() => {
   justify-content: center;
 
   min-height: 100vh;
-  padding: 1.875rem 1.875rem;
+  padding: 1rem;
 
   animation: fadeIn 0.5s ease-in-out;
 }
@@ -173,13 +165,6 @@ onUnmounted(() => {
   overflow: hidden;
   width: 100%;
   height: auto;
-
-  img {
-    object-fit: cover;
-
-    height: auto;
-    width: 100%;
-  }
 }
 
 .pp-body {
@@ -198,7 +183,7 @@ onUnmounted(() => {
       }
 
       a {
-        text-transform: lowercase;
+        text-transform: capitalize;
         color: $main-color;
       }
     }

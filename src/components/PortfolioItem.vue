@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { useProjectItemModal } from "@/stores/project-item-moda";
+import Image from "./Image.vue";
 
 type Props = {
   id: string;
@@ -19,7 +20,7 @@ function openProjectItemModal(id: string) {
 <template>
   <button class="portfolio-item" @click="openProjectItemModal(id)">
     <div class="portfolio-item-thumbnail">
-      <img :src="thumbnail" :alt="projectName" />
+      <Image :src="thumbnail" :alt="projectName" />
 
       <div class="portfolio-item-thumbnail-overlay">
         <p>clique para ver mais detalhes</p>
@@ -64,6 +65,12 @@ function openProjectItemModal(id: string) {
   border: 1px solid 0;
   border-radius: 10px;
   overflow: hidden;
+
+  height: 12.5rem;
+
+  @media (min-width: $break-p-lg) {
+    height: 16.875rem;
+  }
 
   &:hover {
     .portfolio-item-thumbnail-overlay {
