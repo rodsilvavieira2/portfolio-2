@@ -140,6 +140,23 @@ export const useProjectsStore = defineStore({
         onlineUrl: undefined,
         githubUrl: "https://github.com/rodsilvavieira2/simple-auth-backend",
       },
+      {
+        id: uuidV4(),
+        projectName: "Ignews",
+        thumbnail: "/portfolio/ignews.png",
+        description:
+          "Um blog feito com a tecnologia Next.js, para a autenticação é feito um login através do GitHub OAuth, os posts são apenas liberados para assiantes mensais, para não assiantes são monstrados previews, para efetuar uma assinatur o pagamento é feito via stripe. Dados de logins e assinaturas são armazenados no banco de dados do FaunaDB.",
+        role: "Frontend",
+        technologies: [
+          "Next.js",
+          "Stripe",
+          "Next-auth",
+          "FaunaDB",
+          "Typescript",
+        ],
+        onlineUrl: undefined,
+        githubUrl: "https://github.com/rodsilvavieira2/ignews",
+      },
     ],
   }),
 });
