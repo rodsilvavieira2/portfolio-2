@@ -85,11 +85,11 @@ onUnmounted(() => {
                 Role - <span>{{ data?.role }}</span>
               </li>
 
-              <li>
+              <li v-if="data?.onlineUrl">
                 <a :href="data?.onlineUrl" target="_blank"> Veja Online </a>
               </li>
 
-              <li>
+              <li v-if="data?.githubUrl">
                 <a :href="data?.githubUrl" target="_blank">Github repository</a>
               </li>
             </ul>
@@ -122,6 +122,14 @@ onUnmounted(() => {
   padding: 1rem;
 
   animation: fadeIn 0.5s ease-in-out;
+
+  @media (min-width: $break-p-sm) {
+    padding: 1.5rem;
+  }
+
+  @media (min-width: $break-p-lg) {
+    padding: 3rem;
+  }
 }
 
 .pp-content {
@@ -183,8 +191,28 @@ onUnmounted(() => {
       }
 
       a {
+        position: relative;
         text-transform: capitalize;
         color: $main-color;
+
+        &:hover::before {
+          transform: scale(1);
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          background-color: $main-color;
+          height: 1px;
+
+          left: 0;
+          right: 0;
+
+          bottom: 0;
+
+          transition: transform 300ms ease;
+          transform: scale(0);
+        }
       }
     }
   }

@@ -35,17 +35,17 @@ function openProjectItemModal(id: string) {
 @import "@/assets/base.scss";
 
 .portfolio-item {
-  margin: 0 15px 30px;
+  margin: 0 0.9375rem 1.875rem;
   border: 0;
   appearance: none;
   background-color: transparent;
 
   &-title {
     text-align: center;
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 600;
+    font-size: 1.125rem;
     text-transform: capitalize;
-    margin: 20px 0;
+    margin: 1.25rem 0;
   }
 
   &:focus {
@@ -89,7 +89,7 @@ function openProjectItemModal(id: string) {
 
     p {
       color: $white-color;
-      font-size: 16px;
+      font-size: 1rem;
       font-weight: 600;
     }
   }

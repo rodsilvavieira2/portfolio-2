@@ -113,7 +113,7 @@ export const useProjectsStore = defineStore({
           "Uma implementação de upload de arquivos no nó usando os novos recursos do nó 16v, como a função de pipeline. A biblioteca socket.io também é usada para monitorar o progresso do upload de cada arquivo. Este projeto nem usa um framework aproveitando apenas bibliotecas e recursos nativos do node.",
         role: "FullStack",
         technologies: ["Node.js", "Socket.io"],
-        onlineUrl: "projeto não deployado",
+        onlineUrl: undefined,
         githubUrl:
           "https://github.com/rodsilvavieira2/node-upload-implementation",
       },
@@ -137,7 +137,7 @@ export const useProjectsStore = defineStore({
           "AWS-SES",
           "postgresSql",
         ],
-        onlineUrl: "projeto não deployado",
+        onlineUrl: undefined,
         githubUrl: "https://github.com/rodsilvavieira2/simple-auth-backend",
       },
     ],
