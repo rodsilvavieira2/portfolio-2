@@ -66,11 +66,7 @@ function openProjectItemModal(id: string) {
   border-radius: 10px;
   overflow: hidden;
 
-  height: 12.5rem;
-
-  @media (min-width: $break-p-lg) {
-    height: 16.875rem;
-  }
+  height: auto;
 
   &:hover {
     .portfolio-item-thumbnail-overlay {

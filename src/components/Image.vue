@@ -46,7 +46,7 @@ function onError() {
 
 .image-loader {
   width: 100%;
-  height: 100%;
+  height: auto;
 
   > img {
     width: 100%;
@@ -58,6 +58,12 @@ function onError() {
 
 .image-loader-loading {
   animation: 0.8s linear 0s infinite alternate none running skeletonLoading;
+
+  height: 12.5rem !important;
+
+  @media (min-width: $break-p-lg) {
+    height: 16.875rem !important;
+  }
 }
 
 .image-loader-loading-error {
@@ -65,7 +71,7 @@ function onError() {
   align-items: center;
   justify-content: center;
 
-  height: 100%;
+  height: 12.5rem !important;
   width: 100%;
 
   background-color: darken($main-color, 1.2);
@@ -73,6 +79,10 @@ function onError() {
   i {
     font-size: 2.5rem;
     color: #fff;
+  }
+
+  @media (min-width: $break-p-lg) {
+    height: 16.875rem !important;
   }
 }
 </style>
