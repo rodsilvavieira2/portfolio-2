@@ -120,9 +120,9 @@ export const useProjectsStore = defineStore({
       {
         id: uuidV4(),
         projectName: "Autenticação completa com JWT",
-        thumbnail: "/portfolio/placeholder.png",
+        thumbnail: "/portfolio/solid.png",
         description:
-          "Esta é uma API REST de autenticação simples, usando JWT (JSON Web Token) para controlar as sessões do usuário. E com alguns outros recursos como criação de endereço e número de telefone para um usuário cadastrado, redefinição de senha e verificação de e-mail com AWS-SES para envio de e-mails. Este projeto foi criado usando os princípios SOLID e a Metodologia TDD",
+          "Esta é uma API REST de autenticação , usando JWT (JSON Web Token) para controlar as sessões do usuário. Respeitando os principios SOLID, TDD  e DDD.",
         role: "Backend",
         technologies: [
           "Node.js",
@@ -131,14 +131,13 @@ export const useProjectsStore = defineStore({
           "typescript",
           "dasy.js",
           "brcrypt",
-          "nodemailer",
           "typeorm",
           "tsyringe",
-          "AWS-SES",
           "postgresSql",
         ],
-        onlineUrl: undefined,
-        githubUrl: "https://github.com/rodsilvavieira2/simple-auth-backend",
+        onlineUrl: "https://auth-express-tdd-solid.herokuapp.com/",
+        githubUrl:
+          "https://github.com/rodsilvavieira2/auth-with-express-solid-tdd",
       },
       {
         id: uuidV4(),
