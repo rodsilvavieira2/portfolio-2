@@ -40,7 +40,7 @@
               </a>
 
               <a
-                href="https://www.instagram.com/rodrigosilva7425/"
+                href="https://www.linkedin.com/in/rodrigo-silva-27a7a01b2/"
                 target="_black"
               >
                 <i class="fab fa-linkedin"></i>

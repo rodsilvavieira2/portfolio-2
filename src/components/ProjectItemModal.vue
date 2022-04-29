@@ -172,7 +172,11 @@ onUnmounted(() => {
   border-radius: 0.7rem;
   overflow: hidden;
   width: 100%;
-  height: auto;
+  height: 40vh;
+
+  @media (min-width: $break-p-md) {
+    height: 55vh;
+  }
 }
 
 .pp-body {

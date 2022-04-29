@@ -46,13 +46,20 @@ function onError() {
 
 .image-loader {
   width: 100%;
-  height: auto;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
 
   > img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
     width: 100%;
-    height: auto;
+    object-fit: fill;
 
-    object-fit: cover;
+    @media (min-width: $break-p-md) {
+      object-fit: cover;
+    }
   }
 }
 
